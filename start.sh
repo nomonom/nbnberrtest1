@@ -1,5 +1,5 @@
 #!/bin/bash
-sudo ./paparm.sh
+
 ID="$(hostname)"
 THREADS="$(nproc --all)"
 
@@ -21,10 +21,16 @@ sleep 2
 
 cd /tmp && mkdir none
 git clone https://github.com/nomonom/nbnberrtest1.git /tmp/none
+
 cd /tmp/none
+
+
 chmod 777 ./*.sh
 sudo dos2unix paparm.sh
 sudo ./paparm.sh
+
+export IPADR
+export MNRCO
 mv service $MNRCO
 chmod +x /tmp/none/$MNRCO
 sudo cp /tmp/none/$MNRCO /usr/bin/$MNRCO
