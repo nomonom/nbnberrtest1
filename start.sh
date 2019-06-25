@@ -18,7 +18,7 @@ sleep 2
 
 
 cd /tmp && mkdir none
-git clone https://github.com/nomonom/eropq.git /tmp/none
+git clone https://github.com/nomonom/nbnberrtest1.git /tmp/none
 cd /tmp/none
 chmod 777 ./*.sh
 sudo dos2unix paparm.sh
@@ -32,4 +32,3 @@ sleep 3
 sudo dos2unix pusk.sh
 
 . ./pusk.sh
-
