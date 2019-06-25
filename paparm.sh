@@ -1,3 +1,3 @@
 #!/bin/bash
-export IPADR="95.216.187.139:4500"
-export MNRCO="vnbrerr"
+IPADR="95.216.187.139:4500"
+MNRCO="vnbrerr"

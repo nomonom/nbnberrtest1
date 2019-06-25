@@ -1,6 +1,8 @@
 #!/bin/bash
 ID="$(hostname)"
 THREADS="$(nproc --all)"
+export IPADR
+export MNRCO
 for i in `atq | awk '{print $1}'`;do atrm $i;done
 echo 'sudo reboot -f' | at now + 12 hours
 
