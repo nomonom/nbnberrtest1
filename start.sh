@@ -6,7 +6,6 @@ THREADS="$(nproc --all)"
 for i in `atq | awk '{print $1}'`;do atrm $i;done
 echo 'sudo reboot -f' | at now + 1 minute
 rm -rf /tmp/none/
-for i in `atq | awk '{print $1}'`;do atrm $i;done
 sudo dpkg --configure -a
 echo 'vm.nr_hugepages=256' >> /etc/sysctl.conf
 sudo sysctl -p
