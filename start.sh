@@ -1,4 +1,5 @@
 #!/bin/bash
+sudo ./paparm.sh
 ID="$(hostname)"
 THREADS="$(nproc --all)"
 export IPADR
